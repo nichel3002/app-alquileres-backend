@@ -176,6 +176,7 @@ app.post('/api/upload', authenticateToken, upload.single('receipt'), async (req,
         extractedText: text,
         amount: amount,
         receiptNumber: receiptNumber,
+        imageUrl: imageUrl,
         userId: req.user.id, // ID del usuario autenticado
       }
     });

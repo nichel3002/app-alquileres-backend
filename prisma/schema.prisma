@@ -24,6 +24,7 @@ model PaymentReceipt {
   extractedText String
   amount        Float?
   receiptNumber String?
+  imageUrl      String?
   uploadedAt    DateTime @default(now())
 
   userId        Int?
